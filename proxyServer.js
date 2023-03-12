@@ -3,11 +3,14 @@ var cors = require("cors");
 const axios = require("axios");
 const { response } = require("express");
 
+// ici la clé
+const cléApi = "ta clé ici";
+
 var app = express();
 
 app.use(cors());
 
-const API_KEY = "RGAPI-09775b36-3f81-4b74-92e5-bf8243d1617f";
+const API_KEY = cléApi;
 
 function getPlayerPUUID(playerName) {
   return axios
